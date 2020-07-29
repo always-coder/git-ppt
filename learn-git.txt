@@ -1,0 +1,51 @@
+git init 
+
+origin是一个自定义的名字
+git remote add origin git@10.20.0.166:znp/git-demo.git
+
+将文件从工作区存放到暂存区
+$ git add <filename> 
+
+撤销 git add操作,将文件从暂存区放回到工作区
+$git reset HEAD <filename>
+
+撤销上一步操作，将文件从暂存区返回到工作区
+$ git rm --cached <filename>
+
+将文件从暂存区放到git目录
+$ git commit -m "message"
+
+将文件从git目录上传到代码服务器
+$ git push -u origin master<branch-name>
+
+生成秘钥
+ssh-keygen -t rsa
+
+查看当前分支
+$ git branch -a 
+$ git branch -r
+
+新建一个分支
+git branch <branch-name>
+
+切换分支 branch - master/znp-test
+git checkout master<branch-name>
+
+在master分支下，进行合并分支
+git merge znp-test
+
+删除一个分支 
+git branch -d  branch_name
+
+删除一个文件, git rm 等于普通的rm + git add操作
+git rm <filename>  = rm + git add 
+
+撤销提交操作
+git reset --hard commit_hashid<>
+
+
+
+
+
+
+
